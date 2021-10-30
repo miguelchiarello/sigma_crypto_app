@@ -4,7 +4,7 @@ A new Flutter project.
 
 ## What is this?
 
-This project was created as a crypto and api study in order to better understand the scope of and app like this.
+This flutter project was created as a crypto and api study in order to better understand the scope of and app like this.
 
 ## Assets
 
