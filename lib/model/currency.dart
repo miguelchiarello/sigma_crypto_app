@@ -1,4 +1,4 @@
-import 'package:crypto_app/src/shared/datasources/currency_datasource.dart';
+import '../src/shared/datasources/currency_datasource.dart';
 
 class Currency {
   final String id;
@@ -23,7 +23,7 @@ class Currency {
     required this.rankDelta,
   });
 
-  Currency.fromJson(Map<String, dynamic> json )
+  Currency.fromJson(Map<String, dynamic> json)
       : id = json['id'] ?? 0,
         logoUrl = json['logo_url'] ?? 0,
         name = json['name'] ?? 0,
@@ -40,11 +40,11 @@ class CurrencyComparable {
   final Currency currency;
 
   const CurrencyComparable(this.column, this.currency);
-  
+
   int compareTo(CurrencyComparable otherComparable) {
     final self = currency;
     final other = otherComparable.currency;
-    
+
     switch (column) {
       case CurrencyColumn.id:
         return self.id.compareTo(other.id);

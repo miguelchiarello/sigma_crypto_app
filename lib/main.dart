@@ -1,8 +1,8 @@
 import 'package:animated_splash_screen/animated_splash_screen.dart';
-import 'package:crypto_app/src/pages/bottom_navbar.dart';
-import 'package:crypto_app/src/shared/provider/currency_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'src/pages/bottom_navbar.dart';
+import 'src/shared/provider/currency_provider.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);

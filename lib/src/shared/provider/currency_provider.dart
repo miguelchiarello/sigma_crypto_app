@@ -1,6 +1,6 @@
-import 'package:crypto_app/api/crypto_api.dart';
-import 'package:crypto_app/model/currency.dart';
-import 'package:crypto_app/src/shared/datasources/currency_datasource.dart';
+import '../../../api/crypto_api.dart';
+import '../../../model/currency.dart';
+import '../datasources/currency_datasource.dart';
 import 'package:flutter/cupertino.dart';
 
 class CurrencyProvider extends ChangeNotifier {

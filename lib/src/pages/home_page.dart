@@ -1,4 +1,4 @@
-import 'package:crypto_app/src/shared/widgets/currencies_widget.dart';
+import '../shared/widgets/currencies_widget.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {

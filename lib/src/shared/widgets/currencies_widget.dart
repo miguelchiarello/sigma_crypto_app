@@ -1,5 +1,5 @@
-import 'package:crypto_app/src/shared/datasources/currency_datasource.dart';
-import 'package:crypto_app/src/shared/provider/currency_provider.dart';
+import '../datasources/currency_datasource.dart';
+import '../provider/currency_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:syncfusion_flutter_datagrid/datagrid.dart';
@@ -31,7 +31,8 @@ class CurrenciesWidget extends StatelessWidget {
 
   List<GridColumn> buildGridColumns() => <GridColumn>[
         GridColumn(
-            columnName: CurrencyColumn.id.toString(), label: Center(child: buildLabel('ID'))),
+            columnName: CurrencyColumn.id.toString(),
+            label: Center(child: buildLabel('ID'))),
         GridColumn(
             columnName: CurrencyColumn.rank.toString(),
             label: Center(child: buildLabel('Rank'))),

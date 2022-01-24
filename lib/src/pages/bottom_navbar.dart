@@ -1,7 +1,7 @@
-import 'package:crypto_app/src/shared/sigma_colors.dart';
+import '../shared/sigma_colors.dart';
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
-import 'currencies_page.dart';
+import 'predict_currencies_page.dart';
 import 'home_page.dart';
 import 'profile_page.dart';
 
@@ -13,11 +13,11 @@ class BottomNavBar extends StatefulWidget {
 }
 
 class _BottomNavBarState extends State<BottomNavBar> {
-  int _page = 0;
+  int _page = 1;
   final GlobalKey<CurvedNavigationBarState> _bottomNavigationKey = GlobalKey();
 
   final screens = [
-    const CurrenciesPage(),
+    const PredictCurrenciesPage(),
     const HomePage(),
     const ProfilePage(),
   ];
@@ -31,7 +31,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
           index: 1,
           height: 53.0,
           items: const <Widget>[
-            Icon(Icons.compare_arrows, size: 30, color: Colors.black),
+            Icon(Icons.attach_money, size: 30, color: Colors.black),
             Icon(Icons.list, size: 30, color: Colors.black),
             Icon(Icons.perm_identity, size: 30, color: Colors.black),
           ],
