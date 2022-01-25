@@ -70,7 +70,9 @@ class _ProfilePageState extends State<ProfilePage> {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: const [
-          Text('Perfil', style: TextStyle(fontSize: 30.0)),
+          Text('Meu Perfil', style: TextStyle(fontSize: 27.0)),
+          SizedBox(height: 20.0),
+          Text('Miguel Chiarello Fernandes', style: TextStyle(fontSize: 17.0)),
         ],
       ),
     );
