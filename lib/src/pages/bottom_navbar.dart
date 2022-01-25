@@ -32,8 +32,8 @@ class _BottomNavBarState extends State<BottomNavBar> {
           height: 53.0,
           items: const <Widget>[
             Icon(Icons.attach_money, size: 30, color: SigmaColors.divider),
-            Icon(Icons.list, size: 30, color: SigmaColors.divider),
-            Icon(Icons.perm_identity, size: 30, color: SigmaColors.divider),
+            Icon(Icons.home, size: 30, color: SigmaColors.divider),
+            Icon(Icons.person_sharp, size: 30, color: SigmaColors.divider),
           ],
           color: SigmaColors.black,
           buttonBackgroundColor: SigmaColors.black,

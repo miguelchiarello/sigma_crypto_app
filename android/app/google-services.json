@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "432274502222",
+    "project_id": "sigma-app-3088",
+    "storage_bucket": "sigma-app-3088.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:432274502222:android:ca08e5b5efc55b6a13491f",
+        "android_client_info": {
+          "package_name": "com.example.crypto_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "432274502222-fqnt4i2l8ff9igmnr63rh867c3qsriih.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQVHz0PR_ciYnmMCnqDAH3iW6X9f09NlQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "432274502222-fqnt4i2l8ff9igmnr63rh867c3qsriih.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

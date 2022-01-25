@@ -31,7 +31,7 @@ class CurrenciesListTile extends StatelessWidget {
     return SizedBox(
       height: 100,
       child: Row(
-        children: [
+        children: const [
           // buildLogo(currency),
         ],
       ),
