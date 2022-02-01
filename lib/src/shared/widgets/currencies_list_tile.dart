@@ -1,4 +1,4 @@
-import 'package:crypto_app/model/currency.dart';
+import '../../../model/currency.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 

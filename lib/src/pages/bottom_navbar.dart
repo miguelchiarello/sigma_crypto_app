@@ -1,8 +1,8 @@
-import '../shared/sigma_colors.dart';
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
-import 'predict_currencies_page.dart';
+import '../shared/sigma_colors.dart';
 import 'home_page.dart';
+import 'predict_currencies_page.dart';
 import 'profile_page.dart';
 
 class BottomNavBar extends StatefulWidget {

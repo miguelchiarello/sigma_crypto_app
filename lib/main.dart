@@ -1,7 +1,7 @@
 import 'package:animated_splash_screen/animated_splash_screen.dart';
+import 'src/pages/login/login_page.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'src/pages/bottom_navbar.dart';
 import 'src/shared/provider/currency_provider.dart';
 
 class MyApp extends StatelessWidget {
@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
           debugShowCheckedModeBanner: false,
           theme: ThemeData.dark(),
           home: AnimatedSplashScreen(
-            nextScreen: const BottomNavBar(),
+            nextScreen: const LoginPage(),
             splash: Image.asset('assets/images/launch_image.png'),
             splashTransition: SplashTransition.fadeTransition,
             backgroundColor: Colors.black,
