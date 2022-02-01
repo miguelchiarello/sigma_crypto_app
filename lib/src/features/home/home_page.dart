@@ -1,9 +1,9 @@
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
-import '../shared/sigma_colors.dart';
+import '../../shared/sigma_colors.dart';
 import 'main_page.dart';
-import 'predict_currencies_page.dart';
-import 'profile_page.dart';
+import '../predict_currencies/main/predict_currencies_page.dart';
+import '../profile/profile_page.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);

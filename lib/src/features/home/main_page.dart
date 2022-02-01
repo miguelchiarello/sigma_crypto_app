@@ -1,4 +1,4 @@
-import '../shared/widgets/currencies_widget.dart';
+import '../../shared/widgets/currencies_widget.dart';
 import 'package:flutter/material.dart';
 
 class MainPage extends StatelessWidget {

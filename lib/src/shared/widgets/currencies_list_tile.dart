@@ -1,6 +1,7 @@
-import '../../../model/currency.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+
+import '../../../model/currency_model.dart';
 
 class CurrenciesListTile extends StatelessWidget {
   final String id;
@@ -38,7 +39,7 @@ class CurrenciesListTile extends StatelessWidget {
     );
   }
 
-  Widget buildLogo(Currency currency) {
+  Widget buildLogo(CurrencyModel currency) {
     final isSvg = currency.logoUrl.endsWith('.svg');
     return CircleAvatar(
       radius: 60,
@@ -50,7 +51,7 @@ class CurrenciesListTile extends StatelessWidget {
     );
   }
 
-  Widget buildRank(Currency currency) {
+  Widget buildRank(CurrencyModel currency) {
     return Text(
       '${currency.rank}',
       style: const TextStyle(

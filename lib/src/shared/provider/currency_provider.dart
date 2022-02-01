@@ -1,11 +1,11 @@
 import '../../../api/crypto_api.dart';
-import '../../../model/currency.dart';
+import '../../../model/currency_model.dart';
 import '../datasources/currency_datasource.dart';
 import 'package:flutter/cupertino.dart';
 
 class CurrencyProvider extends ChangeNotifier {
-  CurrencyDataSource? currencyDataSource;
-  List<Currency> currencies = [];
+  // CurrencyDataSource? currencyDataSource;
+  // List<Currency> currencies = [];
 
   CurrencyProvider() {
     loadCurrencies();
@@ -14,8 +14,8 @@ class CurrencyProvider extends ChangeNotifier {
   Future loadCurrencies() async {
     final currencies = await CryptoApi.getCurrencies();
 
-    this.currencies = currencies;
-    currencyDataSource = CurrencyDataSource(currencies: currencies);
+    // this.currencies = currencies;
+    // currencyDataSource = CurrencyDataSource(currencies: currencies);
     notifyListeners();
   }
 }

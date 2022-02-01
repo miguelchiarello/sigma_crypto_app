@@ -1,6 +1,6 @@
-import 'package:crypto_app/src/pages/home_page.dart';
-import 'package:crypto_app/src/shared/widgets/primary_button.dart';
-import 'package:crypto_app/src/shared/widgets/text_input.dart';
+import '../home/home_page.dart';
+import '../../shared/widgets/primary_button.dart';
+import '../../shared/widgets/text_input.dart';
 import 'package:flutter/material.dart';
 import 'package:glass_kit/glass_kit.dart';
 

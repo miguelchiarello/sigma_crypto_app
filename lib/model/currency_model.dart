@@ -1,6 +1,6 @@
 import '../src/shared/datasources/currency_datasource.dart';
 
-class Currency {
+class CurrencyModel {
   final String id;
   final String logoUrl;
   final String name;
@@ -11,7 +11,7 @@ class Currency {
   final int rank;
   final int rankDelta;
 
-  const Currency({
+  const CurrencyModel({
     required this.id,
     required this.logoUrl,
     required this.name,
@@ -23,7 +23,7 @@ class Currency {
     required this.rankDelta,
   });
 
-  Currency.fromJson(Map<String, dynamic> json)
+  CurrencyModel.fromJson(Map<String, dynamic> json)
       : id = json['id'] ?? 0,
         logoUrl = json['logo_url'] ?? 0,
         name = json['name'] ?? 0,
@@ -36,29 +36,29 @@ class Currency {
 }
 
 class CurrencyComparable {
-  final CurrencyColumn column;
-  final Currency currency;
+  final CurrencyList card;
+  final CurrencyModel currency;
 
-  const CurrencyComparable(this.column, this.currency);
+  const CurrencyComparable(this.card, this.currency);
 
   int compareTo(CurrencyComparable otherComparable) {
     final self = currency;
     final other = otherComparable.currency;
 
-    switch (column) {
-      case CurrencyColumn.id:
+    switch (card) {
+      case CurrencyList.id:
         return self.id.compareTo(other.id);
-      case CurrencyColumn.rank:
+      case CurrencyList.rank:
         return self.rank.compareTo(other.rank);
-      case CurrencyColumn.name:
+      case CurrencyList.name:
         return self.name.compareTo(other.name);
-      case CurrencyColumn.price:
+      case CurrencyList.price:
         return self.price.compareTo(other.price);
-      case CurrencyColumn.oneHourChange:
+      case CurrencyList.oneHourChange:
         return self.oneDayChange.compareTo(other.oneDayChange);
-      case CurrencyColumn.oneDayChange:
+      case CurrencyList.oneDayChange:
         return self.oneMonthChange.compareTo(other.oneMonthChange);
-      case CurrencyColumn.marketCap:
+      case CurrencyList.marketCap:
         return self.marketCap.compareTo(other.marketCap);
     }
   }

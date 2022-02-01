@@ -1,7 +1,7 @@
 import 'package:animated_splash_screen/animated_splash_screen.dart';
-import 'src/pages/login/login_page.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'src/features/login/login_page.dart';
 import 'src/shared/provider/currency_provider.dart';
 
 class MyApp extends StatelessWidget {
