@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:glass_kit/glass_kit.dart';
 
 class PredictCurrenciesPage extends StatefulWidget {
   const PredictCurrenciesPage({Key? key}) : super(key: key);
@@ -12,12 +13,20 @@ class _PredictCurrenciesPageState extends State<PredictCurrenciesPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(
-        children: const [
-          SizedBox(height: 100),
-          Text('Predict Currencies'),
-          ListTile(
-            title: Text('Predict Currencies'),
-            subtitle: Text('Predict Currencies'),
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          const SizedBox(height: 150),
+          GlassContainer.clearGlass(
+            borderRadius: BorderRadius.circular(11),
+            height: MediaQuery.of(context).size.height * 0.10,
+            width: MediaQuery.of(context).size.width * 0.90,
+            child: ListTile(
+              leading: Image.asset(
+                'assets/images/launch_image.png',
+              ),
+              title: const Text('Bitcoin | BTC'),
+              subtitle: const Text('\$12,000.00'),
+            ),
           ),
         ],
       ),
