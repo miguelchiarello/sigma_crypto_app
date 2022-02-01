@@ -1,5 +1,6 @@
 import 'package:crypto_app/src/pages/home_page.dart';
 import 'package:crypto_app/src/shared/widgets/primary_button.dart';
+import 'package:crypto_app/src/shared/widgets/text_input.dart';
 import 'package:flutter/material.dart';
 import 'package:glass_kit/glass_kit.dart';
 
@@ -40,21 +41,9 @@ class _LoginPageState extends State<LoginPage> {
                   child: Column(
                     children: [
                       const SizedBox(height: 10),
-                      SizedBox(
-                        width: MediaQuery.of(context).size.width * 0.7,
-                        child: TextFormField(
-                          keyboardType: TextInputType.emailAddress,
-                          autofillHints: const [AutofillHints.email],
-                        ),
-                      ),
+                      const TextInput(hintText: 'E-mail'),
                       const SizedBox(height: 30),
-                      SizedBox(
-                        width: MediaQuery.of(context).size.width * 0.7,
-                        child: TextFormField(
-                          keyboardType: TextInputType.number,
-                          autofillHints: const [AutofillHints.password],
-                        ),
-                      ),
+                      const TextInput(hintText: 'Senha'),
                       SizedBox(height: MediaQuery.of(context).size.width * 0.2),
                       PrimaryButton(
                         text: 'Entrar',
