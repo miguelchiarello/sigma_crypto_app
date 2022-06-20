@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
-import '../datasources/currency_datasource.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
+import 'package:provider/provider.dart';
+
 import '../provider/currency_provider.dart';
 
 class CurrenciesWidget extends StatelessWidget {
@@ -11,7 +11,7 @@ class CurrenciesWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     final provider = Provider.of<CurrencyProvider>(context);
     // final currencyDataSource = provider.currencyDataSource;
-
+    //TODO: IMPLEMENTAR O CURRENCYDATASOURCE
     // if (currencyDataSource == null) {
     //   return const Center(
     //     child: CircularProgressIndicator(),
